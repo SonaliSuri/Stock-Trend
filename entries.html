@@ -1,0 +1,24 @@
+{% block body %}
+   
+        <!-- <div id="home"> -->
+            <!-- <form action="/" method="GET"> -->
+                <!-- <input type="submit" class="btn btn-default>" value="HOME" id="home-btn"> -->
+            <!-- </form> -->
+        <!-- </div> -->
+        <!-- <div id="logout"> -->
+            <!-- <form action="/logout" method="GET"> -->
+                <!-- <input type="submit" class="btn btn-default>" value="LOGOUT" id="logout-btn"> -->
+            <!-- </form> -->
+        <!-- </div> -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        {{ plotly_graph }}
+        <!-- errors -->
+        <!-- {% if error %}
+            <p class="error"><strong>Error:</strong> {{ error }}</p>
+        {% endif %}
+         -->
+        <!-- messages -->
+        <!-- {% for message in get_flashed_messages() %}
+            {{ message }}
+        {% endfor %} -->
+{% endblock %}
